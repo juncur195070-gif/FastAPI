@@ -32,3 +32,9 @@ def health():
     return {
         "status": "Ok"
     }
+
+@app.get('/message')
+def message():
+    return {
+        "message": "Hello World"
+    }
