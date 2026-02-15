@@ -38,3 +38,8 @@ def message():
     return {
         "message": "Hello World"
     }
+@app.get('/new')
+def newversion():
+    return {
+        "message": "esto es de la version nueva creada"
+    }
