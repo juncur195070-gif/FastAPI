@@ -26,3 +26,9 @@ def time(iso_code: str):
     return {
         "time": datetime.now(tz)
     }
+
+@app.get('/health')
+def health():
+    return {
+        "status": "Ok"
+    }
